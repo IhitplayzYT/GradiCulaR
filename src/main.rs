@@ -1,6 +1,8 @@
 use crate::helper::Helper::CLI;
 
 mod helper;
+mod random;
+mod tensor;
 
 fn main() {
     let mut clargs = CLI::new();
@@ -10,5 +12,8 @@ fn main() {
         println!("{clargs:?}");
     }
 
-    println!("Hello, world!");
+
+
+
+
 }

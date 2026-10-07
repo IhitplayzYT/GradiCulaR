@@ -1,8 +1,6 @@
 pub mod Helper{
     use std::process::exit;
 
-
-
     const DBG_STR: &str = "";
     const OK:i32 = 0;
     const ERR:i32 = -1;
@@ -27,7 +25,7 @@ pub mod Helper{
 
         pub fn Parse_Args(&mut self){
             let args: Vec<String> = std::env::args().skip(1).collect();
-           for i in &args{
+            for i in &args{
                 if i == "-d" || i == "--debug" || i == " --DEBUG" || i == "-D"{
                     self.dbg = true;
                 } else if i == "-h" || i == "--help" || i == " --HELP" || i == "-H"{
@@ -35,7 +33,7 @@ pub mod Helper{
                 } else{
                     Help();
                 }
-           } 
+            } 
 
 
         }
@@ -43,12 +41,5 @@ pub mod Helper{
 
 
     }
-
-
-    
-
-
-
-
 
 }
